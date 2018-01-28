@@ -42,16 +42,17 @@ import java.util.List;
 ////  ################### вариант 2 сортировка --->> ###################:
 //    Collections.sort(productList, new Comparator<Product>() {
 //    @Override
-//     int compare(Product o1, Product o2) {
+//    public int compare(Product o1, Product o2) {
 //        return o1.getWeight() - (o2.getWeight());
 //    }
 //});
 ////  ################### <<--- вариант 2 сортировка  ###################:
 
-    
+
         for (Product product : productList) {
             System.out.println(product.toString());
         }
+
 
 ////      ################### вариант 3 группировка вывода на консоль --->> #####################
 //        List<String> categoryList = Arrays.asList("Book", "Disk");
@@ -60,7 +61,7 @@ import java.util.List;
 //        System.out.println("Products: ");
 //        for (String category : categoryList) {
 //            System.out.println(category + ": ");
-//            if (category == "Book") {
+//            if (category.equals("Book")) {
 //                for (String bookType : bookTypeList) {
 //                    System.out.println(bookType + ": ");
 //                    for (Product product : productList) {
@@ -71,7 +72,7 @@ import java.util.List;
 //                }
 //            }
 //
-//            if (category == "Disk") {
+//            if (category.equals("Disk")) {
 //                for (DiskType diskType : DiskType.values()) {
 //                    System.out.println(diskType + ": ");
 //                    for (DiskContentType diskContentType : DiskContentType.values()) {
@@ -87,9 +88,9 @@ import java.util.List;
 //                }
 //            }
 //        }
-//        
+//
 ////      ################### <<--- вариант 3 группировка вывода на консоль#####################
-        
+
         
     }
 }
